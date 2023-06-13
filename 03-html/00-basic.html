@@ -62,8 +62,75 @@
              <h2>link 태그</h2>
          </header>
          <section>
-               <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">HTML Link</a>
-         </section>     
+               <!-- 절대경로 -->
+               <a href="https://www.naver.com" target="_blank">HTML Link</a>
+               <!-- 상대경록  -->
+               <a href="./01-layout.html">layout.html</a>
+               <a href="./images/01-01-daisy-w.jpeg">daisy images</a>
+               <a href="images/01-01-daisy-w.jpeg">daisy images222</a>
+               <a href="malito:rlagusrl98@gmail.com">rlagusrl98@gmail.com</a>
+                <!-- 웹접근성 -->
+       <a href="https://www.naver.com" target="_blank" title="새창열림'">네이버</a>
+       <a href="#main">main 바로가기</a>
+       <a href="./sub/sub.html#sec3">sub.html > id 값이 sec3 바로가기</a>
+      </body>
+         </section>  
+         <header>
+               <h2>images 태그</h2>
+         </header>
+         <section>
+                <!-- width, height 속성엔 단위 생략 -->
+                <img src="./images/01-01-daisy-w.jpeg" alt="daisy" width="200" >
+                <img src="./images/01-01-daisy-w.jpeg" alt="daisy" style="width: 300px;">
+                <!-- 절대경로 -->
+                <a href="http://www.xn--2z1b01vo2dzop95a.com/main/?load_popup=1" target="_blank" title="새창열림">
+                  
+                  <img src="https://ssl.pstatic.net/melona/libs/1453/1453327/ee01647b9de087df51f1_20230608121601079.jpg" alt="송파의 프리미엄을 품은 --- 오금동의 특별함을 담은 3'5호선 더블역세권, 35층 프리미엄 아파트" width="100%"></a>
+                  <!-- 반응형 이미지 -->
+                  <picture>
+                    <!-- width 650px 이상일 경우 -->
+                    <source media="(min-width: 650px)" srcset=".\images\img_food.jpg">
+                    <!-- width 465px 이상일 경우 -->
+                    <source media="(min-width: 465px)" srcset="./images/img_car.jpg">
+                    <img src="./images/img_girl.jpg" alt="뒷머리 아주머니" width="100%">
+                  </picture>
+        </section>        
+        <header>
+           <h2>table 태그</h2>
+        </header>
+        <section>
+          <table>
+              <caption>테이블 설명 : 자세한 설명</caption>
+              <colgroup>
+                   <col width="40%">
+                   <col span="3">
+              </colgroup>
+              <thead>
+                
+              </thead>
+          </table>
+        </section>
+         <section id="nav"> 
+               <h2>nav</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magnam officia cum neque veniam vero molestias eius quo nulla, ut maxime voluptate sapiente ea repellat minus dolores quam suscipit at.</p>
+              </section>
+              <section>
+               <h2>C1</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magnam officia cum neque veniam vero molestias eius quo nulla, ut maxime voluptate sapiente ea repellat minus dolores quam suscipit at.</p>
+         </section>
+         <section>
+               <h2>C1</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magnam officia cum neque veniam vero molestias eius quo nulla, ut maxime voluptate sapiente ea repellat minus dolores quam suscipit at.</p>
+         </section>
+         <section>
+               <h2>C1</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magnam officia cum neque veniam vero molestias eius quo nulla, ut maxime voluptate sapiente ea repellat minus dolores quam suscipit at.</p>
+         </section>
+         <section id="main">
+               <h2>main</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magnam officia cum neque veniam vero molestias eius quo nulla, ut maxime voluptate sapiente ea repellat minus dolores quam suscipit at.</p>
+               <a href="#nav">nav 바로가기</a>         
+              </section>      
      </div>
      <!-- 주석 태그  -->
      <!-- <p>안녕 난 김현기야.</p> -->
