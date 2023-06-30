@@ -12,7 +12,6 @@
 }
 
 .wrap {
-  background: rgb(232, 232, 232);
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -22,7 +21,6 @@
   display: flex;
   height: 100px;
   justify-content: space-between;
-  background: rgb(218, 188, 169);
 }
 
 .logo {
@@ -97,12 +95,90 @@
   padding: 10px 0;
 }
 
-.tabs {
+/* tab */
+.tabs-wrap {
+  position: relative;
+  display: flex;
   width: calc(100% / 2 - 200px);
 }
 
+.tabs-wrap .tab-item {
+  width: 50%;
+}
+
+/* 비활성화 tab */
+.tabs-wrap .tab-item .tit {
+  height: 60px;
+  padding-top: 15px;
+  border-bottom: 2px solid #333;
+  background: #ddd;
+  text-align: center;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* 활성화 tab */
+.tabs-wrap .on .tit {
+  background: #333;
+  color: white;
+}
+
+.tabs-wrap .tab-item .cont {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  height: 130px;
+  background: #ddd;
+}
+
+.tabs-wrap .on .cont {
+  display: block;
+}
+
+.lst-bbs li {
+  display: flex;
+  align-items: center;
+}
+
+.lst-bbs li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 5px;
+  background: rgb(0, 0, 0);
+}
+
+.lst-bbs li a {
+  display: block;
+  line-height: 2;
+}
+
+.lst-bbs li a::before {
+  text-decoration: underline;
+}
+
+.lst-gallery {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.lst-gallery li {
+  width: 100px;
+}
+
+.lst-gallery li p {
+  overflow: hidden;
+  width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .banner {
-  width: 400px;
+  width: 386px;
 }
 
 .banner a,
@@ -111,7 +187,7 @@
 }
 
 .goto {
-  width: 400px;
+  width: calc(100% / 2 - 230px);
 }
 
 .goto ul {
@@ -130,6 +206,36 @@
 
 .goto a {
   display: block;
-  height: 100px;
+  height: 100%;
   background: red;
+}
+
+.footer {
+  border-top: 2px solid #d7d7d7;
+  height: 100px;
+  background: lightgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lst-sns {
+  display: flex;
+}
+
+.lst-sns li {
+  margin-left: 20px;
+}
+
+.lst-sns a {
+  display: block;
+  line-height: 100px;
+  height: 100px;
+}
+
+.logo-foot a {
+  display: flex;
+  align-items: center;
+  height: 100px;
+
 }
