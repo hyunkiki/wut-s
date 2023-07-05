@@ -60,23 +60,29 @@
       </nav>
     </header>
     <main class="main">
-      <div class="slide">
-        <div class="slide1">
-          <a href="#">
-            <img src="./images/slide1.png" alt="slide1">
-          </a>
-        </div>
-        <div class="slide2">
-          <a href="#">
-            <img src="./images/slide2.png" alt="slide2">
-          </a>
-        </div>
-        <div class="slide3">
-          <a href="#">
-            <img src="./images/slide3.png" alt="slide3">
-          </a>
-        </div>
+      <!-- 조부모 -->
+      <div class="slide-wrap">
+        <!-- 부모 -->
+        <ul class="lst-slide">
+          <!-- 자식 -->
+          <li>
+            <a href="#">
+              <img src="./images/slide1.png" alt="여름Jane비">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/slide2.png" alt="코디 세트로 구매하면 10% 할인">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/slide3.png" alt="1+1 SALES">
+            </a>
+          </li>
+        </ul>
       </div>
+
       <div class="contents">
         <div class="tabs-wrap">
           <!-- 공지사항 tab-->
@@ -164,15 +170,17 @@
     </footer>
   </div>
   <!-- modal  -->
-  <div class="modal" class="dimmed">
-    <div class="modalbox">
+  <div id="modal" class="modal-dimmed">
+    <div class="modal-box">
       <h3>모달창 제목</h3>
-      <p>모달창 내용</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis totam qui praesentium quod consequuntur
+        accusamus assumenda deserunt accusantium rerum. Neque nobis earum temporibus similique sit totam iure rerum
+        repudiandae optio!</p>
       <button>
-        닫기
+        X
       </button>
     </div>
   </div>
 </body>
 
-</html>
+</html

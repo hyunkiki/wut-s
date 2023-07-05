@@ -39,6 +39,10 @@
   display: flex;
 }
 
+.gnb .depth1>li {
+  position: relative;
+}
+
 .gnb .depth1>li>a {
   display: block;
   height: 100px;
@@ -53,15 +57,26 @@
   color: #fff;
 }
 
+.gnb .depth1>li:last-child .depth2 {
+  border-right: 1px solid #000;
+}
+
 .gnb .depth1:hover .depth2 {
   display: block;
 }
 
 /* nav depth2 */
 .gnb .depth2 {
-  display: none;
-  padding: 30px 0;
-  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* display: none; */
+  padding: 20px 0;
+  border: 1px solid #c8c8c8;
+  background: #ffffff;
+  border-right: none;
 }
 
 .gnb .depth2 a {
@@ -77,15 +92,22 @@
 }
 
 /*slide*/
-.slide {
+.slide-wrap a,
+.slide-wrap img {
+  display: block;
+}
+
+.slide-wrap {
+  position: relative;
   overflow: hidden;
   height: 300px;
 }
 
+.lst-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-.slide a,
-.slide img {
-  display: block;
 }
 
 /*content*/
@@ -211,12 +233,19 @@
 }
 
 .footer {
-  border-top: 2px solid #d7d7d7;
-  height: 100px;
-  background: lightgreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 2px solid #d7d7d7;
+  height: 100px;
+  background: lightgreen;
+}
+
+.logo-foot a {
+  display: flex;
+  align-items: center;
+  height: 100px;
+
 }
 
 .lst-sns {
@@ -233,9 +262,47 @@
   height: 100px;
 }
 
-.logo-foot a {
-  display: flex;
-  align-items: center;
-  height: 100px;
 
+/* modal */
+.modal-dimmed {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgb(0, 0, 0, 0.5);
+}
+
+.modal-box {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  padding: 50px;
+  border: 1px solid white;
+  background: white;
+  border-right: 10px;
+  text-align: center;
+}
+
+.modal-box h3 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.modal-box button {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
