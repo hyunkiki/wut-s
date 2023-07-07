@@ -21,7 +21,7 @@
 <body>
   <h1>Background</h1>
 
-  <strong>background-color</strong>
+  <h2>background-color</h2>
   <div class="bg1">Background color</div>
   <style>
     body {
@@ -35,8 +35,120 @@
       background-color: rgb(102, 51, 153, 0.5);
     }
   </style>
+  <h2>background-image</h2>
+  <div class="box1"></div>
 
+  <style>
+    .box1 {
+      width: 500px;
+      height: 200vh;
+      border: 10px solid #000;
+      background-color: #fff;
+      background-image: url(https://avatars.githubusercontent.com/u/10627436?v=4);
+      /* background-repeat: repeat-x;
+      background-repeat: repeat-y; */
+      background-repeat: no-repeat;
+      /* background-position: top right; */
+      background-position: 50% 0;
+      background-size: 200px auto;
+    }
+  </style>
 
+  <h2>background-attachment</h2>
+  <div class="box2"></div>
+  <style>
+    .box2 {
+      height: 300px;
+      background-image: url(https://images.unsplash.com/photo-1572140629482-ad093de824ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGFtZXJpY2F8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+      background-attachment: fixed;
+      background-size: 100%;
+    }
+  </style>
+
+  <h2>background-size</h2>
+  <div class="box box3"></div>
+  <br>
+  <div class="box box4"></div>
+
+  <style>
+    .box {
+      width: 800px;
+      height: 300px;
+      border: 10px solid #000;
+      background-image: url(https://avatars.githubusercontent.com/u/10627436?v=4);
+      background-repeat: no-repeat;
+    }
+
+    .box3 {
+      background-size: contain;
+      /* logo, 아이콘 : 잘리면 안되는 이미지 */
+    }
+
+    .box4 {
+      background-size: cover;
+      /* 배경 이미지 : 박스를 채우는 이미지 */
+      background-position: 0 -180px;
+    }
+  </style>
+
+  <h2>sprite</h2>
+
+  <div class="img-g sprite1"></div>
+  <div class="img-g sprite2"></div>
+  <div class="img-g sprite3"></div>
+  <div class="img-g sprite4"></div>
+
+  <style>
+    .img-g {
+      background-image: url(./img/sprite.png);
+      background-repeat: no-repeat;
+    }
+
+    .sprite1 {
+      width: 134px;
+      height: 132px;
+      background-position: 0 0;
+
+    }
+
+    .sprite2 {
+      width: 40px;
+      height: 39px;
+      background-position: -140px 0;
+    }
+
+    .sprite3 {
+      width: 40px;
+      height: 40px;
+      background-position: -140px -40;
+    }
+
+    .sprite3:hover {
+      background-position: -140px -260px;
+    }
+
+    .sprite4 {
+      width: 32px;
+      height: 32px;
+      background-position: -185px 0;
+      cursor: pointer;
+    }
+
+    .sprite4:hover {
+      background-position: -225px 0;
+    }
+
+    .sprite4:visited {
+      background-position: -265px 0;
+    }
+
+    .sprite4:active {
+      background-position: -305px 0;
+    }
+  </style>
+  <br><br><br><br>
+  <br><br><br><br>
+  <br><br><br><br>
 </body>
 
 </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slick | css</title>
+  <link rel="stylesheet" href="./dist/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./dist/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+      line-height: 1.5;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Slick</h1>
+  <div class="sec-slide">
+    <div>
+      <img
+        src="https://images.unsplash.com/photo-1688362379195-b8c04f735968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+        alt="정원">
+    </div>
+    <div>
+      <img
+        src="https://images.unsplash.com/photo-1688176886580-b06b45f0beac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"
+        alt="벼">
+    </div>
+    <div>
+      <img
+        src="https://images.unsplash.com/photo-1686605243103-edbb4b0e872c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+        alt="아빠와 딸">
+    </div>
+  </div>
+  <style>
+    .sec-slide {
+      width: 80%;
+      margin: 0 auto;
+      background: lightblue;
+    }
+
+    .sec-slide img {
+      width: 100%;
+    }
+
+    .slick-prev,
+    .slick-next {
+      background: lightblue;
+    }
+
+    .slick-prev:hover,
+    .slick-next:hover {
+      background: blue;
+    }
+
+
+    .slick-arrow {
+      z-index: 100;
+      width: 70px;
+      height: 70px;
+      background: #eee;
+      border-radius: 50px;
+    }
+
+    .slick-arrow::before {
+      font-family: 'Line Awesome Free';
+      font-weight: 900;
+      color: #000;
+      font-size: 1.5rem;
+
+    }
+
+    .slick-prev {
+      left: -35px;
+    }
+
+    .slick-prev:before {
+      content: "\f104";
+
+    }
+
+    .slick-next {
+      right: -35px;
+    }
+
+    .slick-next:before {
+      content: "\f105";
+    }
+  </style>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="./dist/slick-1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.sec-slide').slick({
+        //setting- name: setting - value
+        dots: true,
+      });
+    });
+  </script>
+
+</body>
+
+</html>
