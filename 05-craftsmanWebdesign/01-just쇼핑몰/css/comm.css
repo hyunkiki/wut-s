@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+:root {
+  --primary: #0060ff;
+  --line: #ffffff;
+  --txt: #222328;
+  --w: #ffffff;
+  --b: #000;
+  --widthwrap: 1200px;
+  --slideheight: 300px;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +19,11 @@
   text-decoration: none;
   /*line-height: font size가 1.5배(16px)*/
   line-height: 1.5;
-  color: #222328;
+  color: var(--txt);
 }
 
 .wrap {
-  width: 1200px;
+  width: var(--widthwrap);
   margin: 0 auto;
   padding: 0;
 }
@@ -96,7 +107,7 @@
   right: 0;
   bottom: 5px;
   width: 1px;
-  background: rgb(0, 0, 0, 0.1);
+  background: rgb(var(--b), 0.1);
 }
 
 .gnb .depth1>li:last-child .depth2::after {
@@ -124,7 +135,7 @@
 .slide-wrap {
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: var(--slideheight);
 }
 
 .lst-slide {
