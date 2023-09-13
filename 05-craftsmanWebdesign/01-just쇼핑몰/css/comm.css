@@ -198,6 +198,7 @@
   text-align: center;
   font-size: 16px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 /* 활성화 tab */
@@ -326,9 +327,9 @@
 
 /* modal */
 .modal-dimmed {
-  display: none;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -336,6 +337,15 @@
   bottom: 0;
   z-index: 10;
   background: rgb(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.modal-dimmed.active {
+  /* display: flex; */
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-box {
@@ -347,6 +357,7 @@
   background: white;
   border-right: 10px;
   text-align: center;
+  border-radius: 30px;
 }
 
 .modal-box h3 {
